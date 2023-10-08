@@ -1,0 +1,59 @@
+// Java program to demonstrate encapsulation 
+  
+class Encapsulate { 
+    // private variables declared 
+    // these can only be accessed by 
+    // public methods of class 
+    private String Name; 
+    private int Math; 
+    private int English; 
+   private int Avg;
+    // get method for age to access 
+    // private variable geekAge 
+    public int getEnglish() { return English; } 
+  
+    // get method for name to access 
+    // private variable geekName 
+    public String getName() { return Name; } 
+  
+    // get method for roll to access 
+    // private variable geekRoll 
+    public int getMath() { return Math; } 
+  public int getAvg() { return Avg; }
+    // set method for age to access 
+    // private variable geekage 
+    public void setEnglish(int newEnglish) { English = newEnglish; } 
+  public void setAvg(int newAvg) { Avg = newAvg; } 
+    // set method for name to access 
+    // private variable geekName 
+    public void setName(String newName) 
+    { 
+       Name = newName; 
+    } 
+  
+    // set method for roll to access 
+    // private variable geekRoll 
+    public void setMath(int newMath) { Math = newMath; } 
+} 
+  
+public class TestEncapsulation { 
+    public static void main(String[] args) 
+    { 
+        Encapsulate obj = new Encapsulate(); 
+  
+        // setting values of the variables 
+        obj.setName("Annie"); 
+        obj.setEnglish(85); 
+        obj.setMath(91); 
+  obj.setAvg(88);
+        // Displaying values of the variables 
+        System.out.println("Name: " + obj.getName()); 
+        System.out.println("English: " + obj.getEnglish()); 
+        System.out.println("Math: " + obj.getMath()); 
+  System.out.println("Avg: " + obj.getAvg()); 
+        // Direct access of geekRoll is not possible 
+        // due to encapsulation 
+        // System.out.println("Geek's roll: " + 
+        // obj.geekName); 
+    } 
+}
